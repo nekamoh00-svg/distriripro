@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DistriPro – Gestion de distribution pour votre équipe</title>
+<meta name="description" content="Stock, commandes, livraisons, factures et crédit clients dans une seule application partagée par toute l'équipe.">
+<meta name="theme-color" content="#0f766e">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🚚%3C/text%3E%3C/svg%3E">
+<style>
+:root{--bg:#f6f8fa;--card:#fff;--tx:#17202b;--mu:#5d6b7e;--pr:#0f766e;--pr2:#115e59;--bd:#e0e6ed;--soft:#e6f4f2;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1319;--card:#171e27;--tx:#e8edf3;--mu:#97a6b9;--pr:#2dd4bf;--pr2:#5eead4;--bd:#2a3542;--soft:#12302d}}
+:root[data-theme="dark"]{--bg:#0e1319;--card:#171e27;--tx:#e8edf3;--mu:#97a6b9;--pr:#2dd4bf;--pr2:#5eead4;--bd:#2a3542;--soft:#12302d}
+html{scroll-behavior:smooth}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+a{color:inherit;text-decoration:none}.w{max-width:1040px;margin:0 auto;padding:0 18px}
+header{position:sticky;top:0;z-index:5;background:var(--card);border-bottom:1px solid var(--bd)}
+header .w{display:flex;align-items:center;gap:18px;height:60px}.logo{font-weight:800;font-size:19px;color:var(--pr)}
+nav{margin-inline-start:auto;display:flex;gap:18px;align-items:center}nav a.l{color:var(--mu);font-size:14px}nav a.l:hover{color:var(--tx)}
+.btn{display:inline-block;background:var(--pr);color:#fff;padding:11px 20px;border-radius:9px;font-weight:600}
+:root[data-theme="dark"] .btn,:root:not([data-theme="light"]) .btn{color:#06201d}
+.btn.o{background:none;border:1px solid var(--bd);color:var(--tx)}
+.hero{padding:64px 0 48px;background:linear-gradient(180deg,var(--soft),var(--bg))}
+h1{font-size:clamp(30px,5vw,48px);line-height:1.12;margin:0 0 16px;letter-spacing:-.02em;max-width:720px}
+.hero p{font-size:18px;color:var(--mu);max-width:640px;margin:0 0 26px}.cta{display:flex;gap:12px;flex-wrap:wrap}
+.tags{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}.tags span{background:var(--card);border:1px solid var(--bd);border-radius:20px;padding:5px 13px;font-size:13px;color:var(--mu)}
+section{padding:52px 0}h2{font-size:28px;margin:0 0 8px;letter-spacing:-.01em}.sub{color:var(--mu);margin:0 0 28px;max-width:640px}
+.g{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.c{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:18px}.c .i{font-size:26px}.c h3{margin:8px 0 4px;font-size:17px}.c p{margin:0;color:var(--mu);font-size:14.5px}
+.alt{background:var(--card);border-block:1px solid var(--bd)}
+ol.s{list-style:none;counter-reset:n;padding:0;margin:0;display:grid;gap:12px}
+ol.s li{counter-increment:n;background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:14px 16px 14px 56px;position:relative}
+.alt ol.s li{background:var(--bg)}ol.s li:before{content:counter(n);position:absolute;inset-inline-start:14px;top:12px;width:30px;height:30px;border-radius:50%;background:var(--pr);color:#fff;display:grid;place-items:center;font-weight:700}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+footer{padding:30px 0;color:var(--mu);font-size:14px;text-align:center}
+@media(max-width:640px){nav a.l{display:none}.hero{padding:40px 0 32px}}
+</style></head><body>
+<header><div class="w"><a class="logo" href="#">🚚 DistriPro</a><nav><a class="l" href="#fonctions">Fonctionnalités</a><a class="l" href="#roles">Rôles</a><a class="l" href="#demarrer">Démarrer</a><a class="btn" href="app.html">Ouvrir l'application</a></nav></div></header>
+<div class="hero"><div class="w">
+<h1>Pilotez votre distribution, du dépôt jusqu'au client.</h1>
+<p>Stock, commandes, livraisons, factures et crédit clients dans une seule application, partagée en temps réel par toute votre équipe.</p>
+<div class="cta"><a class="btn" href="app.html">Ouvrir l'application</a><a class="btn o" href="#demarrer">Comment démarrer</a></div>
+<div class="tags"><span>📱 Téléphone et ordinateur</span><span>🔄 Données synchronisées</span><span>🌍 Français · English · العربية</span><span>🔐 Comptes par rôle</span></div>
+</div></div>
+<section id="fonctions"><div class="w"><h2>Tout le circuit de vente, au même endroit</h2><p class="sub">De la réception du stock à l'encaissement, chaque étape est suivie et visible par la bonne personne.</p>
+<div class="g">
+<div class="c"><div class="i">📦</div><h3>Catalogue et stock</h3><p>Photos, catégories, colisage carton et unité, alertes de stock bas, historique des mouvements.</p></div>
+<div class="c"><div class="i">🛒</div><h3>Ventes par panier</h3><p>Le vendeur compose la commande depuis le catalogue, avec remise, date de livraison et choix du livreur.</p></div>
+<div class="c"><div class="i">🏭</div><h3>Préparation et chargement</h3><p>Le magasinier regroupe les commandes, crée le bon de chargement du camion et le stock se met à jour.</p></div>
+<div class="c"><div class="i">🚚</div><h3>Livraisons suivies</h3><p>Statuts en direct, appel client et itinéraire en un clic, encaissement et motif en cas d'échec.</p></div>
+<div class="c"><div class="i">🧾</div><h3>Factures et retours</h3><p>Bons de commande, factures et bons de chargement imprimables, modification tracée, retours clients.</p></div>
+<div class="c"><div class="i">💳</div><h3>Crédit clients</h3><p>Plafonds, règlements, relevés de compte, ancienneté des créances et suivi par vendeur.</p></div>
+<div class="c"><div class="i">📈</div><h3>Bénéfices</h3><p>Chiffre d'affaires, coût et marge par période, vendeur et article, réservés à l'administrateur.</p></div>
+<div class="c"><div class="i">🛡️</div><h3>Accès et contrôle</h3><p>Comptes créés par l'administrateur, pages autorisées par personne, suspension à distance, journal d'activité.</p></div>
+</div></div></section>
+<section id="roles" class="alt"><div class="w"><h2>Une vue adaptée à chaque métier</h2><p class="sub">Chaque membre de l'équipe ne voit que ce dont il a besoin.</p>
+<div class="g">
+<div class="c"><h3>👑 Administrateur</h3><p>Crée les articles, clients et comptes, règle les accès, voit les bénéfices et les sauvegardes.</p></div>
+<div class="c"><h3>🧑‍💼 Vendeur</h3><p>Prend les commandes de la journée, suit ses ventes et le crédit de ses clients.</p></div>
+<div class="c"><h3>🏷️ Magasinier</h3><p>Prépare les commandes, crée les bons de chargement et enregistre les entrées de stock.</p></div>
+<div class="c"><h3>🚛 Livreur</h3><p>Voit ses livraisons et son chargement, encaisse le client et confirme la livraison.</p></div>
+<div class="c"><h3>🧭 Superviseur</h3><p>Affecte les livraisons, suit les retards, les échecs et les performances de l'équipe.</p></div>
+</div></div></section>
+<section id="demarrer"><div class="w"><h2>Démarrer en 5 étapes</h2><p class="sub">Une personne, l'administrateur, prépare tout. Le reste de l'équipe n'a plus qu'à se connecter.</p>
+<div class="two"><ol class="s">
+<li><b>Ouvrez l'application</b> avec le bouton « Ouvrir l'application ».</li>
+<li><b>À la première ouverture</b>, créez le compte administrateur (nom et mot de passe).</li>
+<li><b>Ajoutez vos articles et vos clients</b> (menus Stock et Contacts).</li>
+<li><b>Créez les comptes de l'équipe</b> : vendeurs, livreurs, superviseurs, magasiniers.</li>
+<li><b>Chacun se connecte</b> et choisit son propre mot de passe à la première connexion.</li></ol>
+<div class="c"><h3>📲 Installer sur le téléphone</h3><p><b>Android (Chrome)</b> : menu ⋮ puis « Ajouter à l'écran d'accueil ».<br><b>iPhone (Safari)</b> : bouton Partager puis « Sur l'écran d'accueil ».</p><p style="margin-top:12px">L'icône ouvre ensuite l'application en plein écran, comme une application classique.</p></div></div>
+</div></section>
+<footer><div class="w">© DistriPro · Besoin d'aide ? Contactez l'administrateur de votre équipe.</div></footer>
+</body></html>

@@ -1,0 +1,41 @@
+DistriPro - site web de l'equipe
+================================
+
+Contenu
+  public/index.html   page d'accueil professionnelle (presentation, roles, demarrage)
+  public/app.html     l'application (connectee a votre base Firebase hb-app-a39cc)
+  public/manifest.webmanifest, icon-*.png, sw.js   installation sur telephone et ouverture rapide
+  firebase.json, .firebaserc, database.rules.json  configuration de l'hebergement
+
+1) A FAIRE UNE SEULE FOIS - console Firebase (console.firebase.google.com, projet hb-app-a39cc)
+   - Authentication > Sign-in method > activer "Anonyme".
+   - Realtime Database : verifier qu'elle existe (europe-west1).
+
+2) MISE EN LIGNE (sur votre ordinateur)
+   - Installer Node.js (nodejs.org).
+   - Ouvrir un terminal dans ce dossier, puis :
+       npm install -g firebase-tools
+       firebase login
+       firebase deploy
+   - Adresse du site : https://hb-app-a39cc.web.app
+       page d'accueil : /      application : /app.html
+
+3) PARTAGER AVEC L'EQUIPE
+   - Envoyez l'adresse du site (WhatsApp, e-mail...).
+   - Premiere ouverture : l'administrateur cree son compte, ajoute articles et clients,
+     puis cree les comptes de l'equipe (menu Contacts).
+   - Chaque membre se connecte et choisit son mot de passe a la premiere connexion.
+   - Sur telephone : "Ajouter a l'ecran d'accueil" (Chrome) ou "Sur l'ecran d'accueil" (Safari).
+
+4) NOM DE DOMAINE PERSONNEL (facultatif)
+   Firebase console > Hosting > Ajouter un domaine personnalise. Ajoutez aussi ce domaine dans
+   Authentication > Settings > Authorized domains, sinon la connexion anonyme sera refusee.
+
+5) MISES A JOUR
+   Remplacez public/app.html par la nouvelle version, puis relancez : firebase deploy
+
+SECURITE
+Les regles fournies n'autorisent l'acces qu'aux visiteurs connectes (anonymement). Cela bloque
+les acces directs a la base, mais toute personne qui ouvre le site peut obtenir cet acces. La
+separation entre comptes (administrateur, vendeur, livreur...) est faite dans l'application et ne
+protege pas les donnees contre une personne technique. Ne diffusez l'adresse qu'a l'equipe.
